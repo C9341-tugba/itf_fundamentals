@@ -1,0 +1,86 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOPXgTva17frRxdCLTvvyfv",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/itf_fundamentals/blob/gh-pages/zodiac%20sign\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pIFsnQ9sKzO6",
+        "outputId": "a42351e5-7d14-4dd3-aea2-d53edc973844"
+      },
+      "source": [
+        "#@title Default title text\n",
+        "i = (input(\"Insert birth year \"))\n",
+        "w = str(i)\n",
+        "if i.isdigit() and len(i) == 4:\n",
+        "    q = int(i)\n",
+        "    if (q - 1960) % 12 == 0:\n",
+        "        a = \"Mouse\"\n",
+        "    elif (q - 1960) % 12 == 1:    \n",
+        "        a = \"Cow\"\n",
+        "    elif (q - 1960) % 12 == 2:\n",
+        "        a = \"Tiger\"\n",
+        "    elif (q - 1960) % 12 == 3:    \n",
+        "        a = \"Rabbit\"\n",
+        "    elif (q - 1960) % 12 == 4:\n",
+        "        a = \"Dragon\"\n",
+        "    elif (q - 1960) % 12 == 5:    \n",
+        "        a = \"Snake\"\n",
+        "    elif (q - 1960) % 12 == 6:\n",
+        "        a = \"Horse\"\n",
+        "    elif (q - 1960) % 12 == 7:    \n",
+        "        a = \"Goat\"\n",
+        "    elif (q - 1960) % 12 == 8:\n",
+        "        a = \"Monkey\"\n",
+        "    elif (q - 1960) % 12 == 9:    \n",
+        "        a = \"Rooster\"\n",
+        "    elif (q - 1960) % 12 == 10:\n",
+        "        a = \"Dog\"\n",
+        "    elif (q - 1960) % 12 == 11:    \n",
+        "        a = \"Pig\"\n",
+        "    print(\"Your Zodiac sign:\", a)    \n",
+        "else:\n",
+        "    print(\"Please enter your four-digit year of birth\")\n"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Insert birth year 1988\n",
+            "Your Zodiac sign: Dragon\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
