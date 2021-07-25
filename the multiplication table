@@ -1,0 +1,69 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled4.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOTvVZCbX9U26YHN7AcLet2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/itf_fundamentals/blob/main/the%20multiplication%20table\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MuVdWs-EMU-8",
+        "outputId": "8abf2b64-d385-4f81-9561-f797647abe22"
+      },
+      "source": [
+        "n = int(input('enter a number between 1-10'))\n",
+        "\n",
+        "for i in range(11):\n",
+        "    print('{}x{} = '.format(n, i), n*i)\n",
+        "\n"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter a number between 1-104\n",
+            "4x0 =  0\n",
+            "4x1 =  4\n",
+            "4x2 =  8\n",
+            "4x3 =  12\n",
+            "4x4 =  16\n",
+            "4x5 =  20\n",
+            "4x6 =  24\n",
+            "4x7 =  28\n",
+            "4x8 =  32\n",
+            "4x9 =  36\n",
+            "4x10 =  40\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
