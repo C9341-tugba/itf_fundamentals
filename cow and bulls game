@@ -1,0 +1,98 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled5.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPBnt+Z69x+/79Hr3cON4KY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/C9341-tugba/itf_fundamentals/blob/main/cow%20and%20bulls%20game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "amCdD7wqOazY",
+        "outputId": "4d7d94b9-05d0-4520-fa02-3f044ca835dc"
+      },
+      "source": [
+        "import random\n",
+        "print(\"Welcome to the Cows and Bulls Game!\")\n",
+        "random_sayi = str(random.randint(1000, 9999))\n",
+        "oyun = \"Oyuna devam!\"\n",
+        "while oyun == \"Oyuna devam!\":\n",
+        "    user_sayi = input(\"What is your guess? : \")\n",
+        "    cows = 0\n",
+        "    bulls = 0\n",
+        "    for i in range(len(user_sayi)):\n",
+        "        for j in range(len(user_sayi)):\n",
+        "            if (user_sayi[i] == random_sayi[j]):\n",
+        "                if(i == j):\n",
+        "                    cows +=1\n",
+        "                else:\n",
+        "                    bulls +=1\n",
+        "            else:\n",
+        "                None\n",
+        "    if (cows == 4):\n",
+        "        oyun = \"Oyun bitti..\"\n",
+        "        print(\"Well Done!\")\n",
+        "    else:\n",
+        "        if (cows <= 1 & bulls <= 1):\n",
+        "            print(\"{} cow, {} bull\".format(cows, bulls))\n",
+        "        elif (cows <= 1 & bulls > 1):\n",
+        "            print(\"{} cow, {} bulls\".format(cows, bulls))\n",
+        "        elif (cows > 1 & bulls <= 1):\n",
+        "            print(\"{} cows, {} bull\".format(cows, bulls))\n",
+        "        else:\n",
+        "            print(\"{} cows, {} bulls\".format(cows, bulls))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Welcome to the Cows and Bulls Game!\n",
+            "What is your guess? : 1090\n",
+            "0 cow, 0 bull\n",
+            "What is your guess? : 2345\n",
+            "0 cow, 2 bull\n",
+            "What is your guess? : 3456\n",
+            "2 cows, 0 bull\n",
+            "What is your guess? : 4567\n",
+            "0 cow, 2 bull\n",
+            "What is your guess? : 5678\n",
+            "0 cow, 3 bull\n",
+            "What is your guess? : 5467\n",
+            "0 cow, 2 bull\n",
+            "What is your guess? : 3478\n",
+            "0 cow, 1 bull\n",
+            "What is your guess? : 3400\n",
+            "0 cow, 0 bull\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
